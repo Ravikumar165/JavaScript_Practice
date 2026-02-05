@@ -23,16 +23,55 @@
 // }  
 alert("JS connected!");
 
-const favmovies = "dhoom";
-console.log("Welcome to the movie guessing game!");
+// const favmovies = "dhoom";
+// console.log("Welcome to the movie guessing game!");
 
-let userguess = prompt("Guess the movie?");
+// let userguess = prompt("Guess the movie?");
 
-while (userguess !== favmovies && userguess !== "quit") {
-    console.log("Wrong guess, try again!");
-    userguess = prompt("Guess the movie?");
+// while (userguess !== favmovies && userguess !== "quit") {
+//     console.log("Wrong guess, try again!");
+//     userguess = prompt("Guess the movie?");
+// }
+
+// if (userguess === favmovies) {
+//     console.log("Congratulations! You guessed it right!");
+// }
+
+
+// break keyword
+// let i = 1;
+// while (i <= 5) {
+//     console.log(i); 
+//     if (i === 3) {
+//         break;
+//     }
+//     i++;
+// }
+
+
+// loops in array
+// let fruits = ["apple", "banana", "cherry", "date", "elderberry"];
+// for (let i = 0; i < fruits.length; i++) {
+//     console.log(fruits[i]);
+// }
+
+
+// for...of loop
+let fruits = ["apple", "banana", "cherry", "date", "elderberry"];
+for (let fruit of fruits) {
+    console.log(fruit);
 }
 
-if (userguess === favmovies) {
-    console.log("Congratulations! You guessed it right!");
+
+// neasted for of loop
+
+let matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+for (let list of matrix) {
+    for (letnum of list) {
+        console.log(num);
+    }
 }
