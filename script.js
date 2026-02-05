@@ -65,13 +65,79 @@ for (let fruit of fruits) {
 
 // neasted for of loop
 
-let matrix = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-];
-for (let list of matrix) {
-    for (letnum of list) {
-        console.log(num);
+// let matrix = [
+//     [1, 2, 3],
+//     [4, 5, 6],
+//     [7, 8, 9]
+// ];
+// for (let list of matrix) {
+//     for (letnum of list) {
+//         console.log(num);
+//     }
+// }
+
+// js ojcects literals
+let myInformation = {
+    name: "Ravi Kumar",
+    age: 25,
+    city: "Delhi",
+    profession: "Software Developer",
+};
+
+
+//pq  threads /twitter posts
+const post = {
+    username: "@Ravi Kumar",
+    content: "Hello, this is my first post!",
+    timestamp: "2024-06-01T12:00:00Z",
+    likes: 50,
+    Reposts: 10,
+    comments: [["thanks"],[ "great post!"], [ "wow "],["Great post!", "Thanks for sharing!"]], 
+    tags : ["@ravi", "@pawan", "@sonu"],    
+};
+
+// get values
+ let student = {
+    name: "Ravi",
+    marks: 85.5,
+    
+};
+
+//prime number check
+
+
+let num = 17;
+let isPrimeNum = true;
+if (num <= 1) {
+    isPrimeNum = false;
+} else {
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) {
+            isPrimeNum = false;
+            break;
+        }
     }
+}
+
+// prime number user input
+
+
+let number = parseInt(prompt("Enter a number:"));
+let isPrime = true; 
+
+if (number <= 1) {
+    isPrime = false;
+} else {
+    for (let i = 2; i <= Math.sqrt(number); i++) {
+        if (number % i === 0) {
+            isPrime = false;
+            break;
+        }
+    } 
+}
+
+if (isPrime) {
+    console.log(number + " is a prime number.");
+} else {
+    console.log(number + " is not a prime number.");
 }
