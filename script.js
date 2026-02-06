@@ -141,3 +141,55 @@ if (isPrime) {
 } else {
     console.log(number + " is not a prime number.");
 }
+
+
+
+// object of objects (neasted objects)
+
+let students = {
+    student1: { name: "Ravi", age: 25, city: "Delhi" },
+    student2: { name: "Pawan", age: 22, city: "Mumbai" },
+    student3: { name: "Sonu", age: 24, city: "Bangalore" },
+};
+
+
+// object of arrays
+const classinfo = [
+    {
+       name: "Ravi Kumar",
+       age: 25,
+       city: "Delhi"
+    },
+    {
+        name: "Pawan Kumar",
+        age: 22,
+        city: "Mumbai"
+    },
+    {
+        name: "Sonu Kumar",
+        age: 24,
+        city: "Bangalore"
+    },
+];   
+
+// math object
+
+// generate random number between 1 and 100
+Math.floor(Math.random() * 100) + 1; // generates a random number between 1 and 100 
+
+
+// generate random number between 1 and 10
+Math.floor (Math.random() * 10 ) + 1;
+
+
+// guessing game with random number 1 to max number
+
+ const max =  prompt("Enter the maximum number:");
+
+const randomNum = Math.floor(Math.random() * max) + 1;
+ let guess = prompt("Guess the number between 1 and " + max + ":");
+while (parseInt(guess) !== randomNum) {
+    guess = prompt("Wrong guess! Try again. Guess the number between 1 and " + max + ":");
+}   
+alert("Congratulations! You guessed the number " + randomNum + "!");
+    
