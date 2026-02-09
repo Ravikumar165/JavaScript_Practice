@@ -1,43 +1,26 @@
-// java script part 7
+// js part 8
 
 
-// arrow function 
- const sum = (a,b) => {
-    console.log(a+b);
- }
-
-
- // implicit return 
- const mul =(a,b)=>{
-    a*b
- };
-
-
- // set interval
-  let id = setInterval (() => {
-    console.log("ravi kumar");
-  }, 2000);
-  console.log(id);
-
-  let id2 = setInterval (() => {
-    console.log("hello world");
-  }, 4000);
-  console.log(id2);// ye run hota rahega // stop karne ke liye clearInterval(id) karenge
-
-//this with arrow function 
-
-const student = {
-    name: "Ravi kumar",
-    age:21,
-    marks:86,
-    prop: this // global scope
-    getName:function(){
-        return this.name;
-    },
-  
+let arr = [1,2,3,4,5];
+let print = function (el){ // function banae ak or print naam ke variable me stor kar diye function ko
+  console.log(el); // function me jo value pass kiye "el" usko console.log se print kar diye
 };
+arr.forEach(print); // function ko call kiye forEach method se
 
+// forEach object 
 
-
-
-
+let arr = [
+  {
+    name: "ravi",
+    age: 20,
+    city: "patna"
+  },
+  {
+    name : "rohit",
+    age:22,
+    city:"bkp"
+  }
+];
+arr.forEach ((el) => {
+  console.log(student.marks);
+});
